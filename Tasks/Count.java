@@ -1,0 +1,16 @@
+class Count{
+
+     public static void main(String[] anu){
+	 
+	 int count = 0, num = 1564;
+	 
+	 while (num != 0){		 
+		 num = num / 10;		 
+		 ++count;		 
+	 }
+		 
+	 System.out.println("Number of digits" + count);
+		 
+    }
+
+}
