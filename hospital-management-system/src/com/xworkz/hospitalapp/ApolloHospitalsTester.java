@@ -31,7 +31,7 @@ public class ApolloHospitalsTester {
 		String gender = scanner.next();
 		patient.setGender(Gender.valueOf(gender));// String to enum
 		
-		/*patient.patientName = "Muskan";
+		patient.patientName = "Muskan";
 		patient.age = 22;
 		patient.gender = Gender.Female;
 		patient.address = "Gayatrinagar";
@@ -40,14 +40,14 @@ public class ApolloHospitalsTester {
 		patient1.patientName = "Sneha";
 		patient1.age = 23;
 		patient1.gender = Gender.Female;
-		patient1.address = "Rajajinagar";*/
+		patient1.address = "Rajajinagar";
 		
 		apollo.addPatient(patient);	
 		//apollo.addPatient(patient1);
 		}
 		apollo.getAllPAtients();
 		
-		/*System.out.println("Enter the patient name");
+		System.out.println("Enter the patient name");
 		String patientName = scanner.next();
 		apollo.getPatientByName(patientName);
 	
@@ -69,10 +69,10 @@ public class ApolloHospitalsTester {
 		
 		System.out.println("Enter the patient name");
 		String patientName1 = scanner.next();
-		apollo.getGenderByPatientName(patientName1);*/
+		apollo.getGenderByPatientName(patientName1);
 		
 		//Update operation
-		/*System.out.println("Enter the patient name: ");
+		System.out.println("Enter the patient name: ");
 		String patientName = scanner.next();
 		System.out.println("Enter the patient new address: ");
 		String newAddress = scanner.next();
@@ -88,8 +88,9 @@ public class ApolloHospitalsTester {
 		String patientName1 = scanner.next();
 		System.out.println("Enter the patient new age");
 		int newAge = scanner.nextInt();
-		apollo.updatePatientAgeByName(patientName1, newAge);*/
+		apollo.updatePatientAgeByName(patientName1, newAge);
 		
+		// delete operation
 		System.out.println("Enter the patient name to delete");
 		String patientName = scanner.next();
 		apollo.deletePatientByName(patientName);

@@ -14,6 +14,7 @@ public class ApolloHospitals extends Hospital{
 		patients = new Patient[size]; // to avoid the runtime 
 	}
 	
+	//Create operation
 	public boolean addPatient(Patient patient) {
 		System.out.println("Inside addPatient method ");
 		 boolean isPatientAdded = false;
@@ -26,6 +27,7 @@ public class ApolloHospitals extends Hospital{
 		 return isPatientAdded;
 	}
 	
+	//Read operation
 	public void getAllPAtients() {
 		System.out.println("Lists of patients are: ");
 		for(int i = 0; i < patients.length; i++) {
@@ -103,6 +105,7 @@ public class ApolloHospitals extends Hospital{
 		}
 	}
 	
+	//Update operation
 	public boolean updatePatientAddressByName(String name , String newPatientAddress) {
 		boolean isUpdated = false;
 		System.out.println("Inside updatePatientAddressByName");
@@ -146,6 +149,7 @@ public class ApolloHospitals extends Hospital{
 		return isUpdated2;	
 	}
 	
+	//Delete operaion
 	public boolean deletePatientByName(String name) {
 		boolean isDeleted = false;
 		newPatients = new Patient[patients.length-1];
