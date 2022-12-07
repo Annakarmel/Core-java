@@ -47,7 +47,7 @@ public class ApolloHospitalsTester {
 		}
 		apollo.getAllPAtients();
 		
-		System.out.println("Enter the patient name");
+		/*System.out.println("Enter the patient name");
 		String patientName = scanner.next();
 		apollo.getPatientByName(patientName);
 	
@@ -69,7 +69,44 @@ public class ApolloHospitalsTester {
 		
 		System.out.println("Enter the patient name");
 		String patientName1 = scanner.next();
-		apollo.getGenderByPatientName(patientName1);
+		apollo.getGenderByPatientName(patientName1);*/
+		
+		//Update operation
+		/*System.out.println("Enter the patient name: ");
+		String patientName = scanner.next();
+		System.out.println("Enter the patient new address: ");
+		String newAddress = scanner.next();
+		apollo.updatePatientAddressByName(patientName, newAddress);
+		
+		System.out.println("Enter the patient address: ");
+		String address = scanner.next();
+		System.out.println("Enter the patient new name: ");
+		String newName = scanner.next();
+		apollo.updatePatientAddressByName(address, newName);
+		
+		System.out.println("Enter the patient name: ");
+		String patientName1 = scanner.next();
+		System.out.println("Enter the patient new age");
+		int newAge = scanner.nextInt();
+		apollo.updatePatientAgeByName(patientName1, newAge);*/
+		
+		System.out.println("Enter the patient name to delete");
+		String patientName = scanner.next();
+		apollo.deletePatientByName(patientName);
+		
+		System.out.println("Enter the patient address to delete");
+		String address = scanner.next();
+		apollo.deletePatientByAddress(address);
+		
+		System.out.println("Enter the patient age to delete");
+		int age = scanner.nextInt();
+		apollo.deletePatientByAge(age);
+		
+		System.out.println("Enter the patient gender to delete");
+		String gender = scanner.next();
+		apollo.deletePatientByGender(Gender.valueOf(gender));
+		
+		apollo.getAllNewPatients();
 	}
 
 }
