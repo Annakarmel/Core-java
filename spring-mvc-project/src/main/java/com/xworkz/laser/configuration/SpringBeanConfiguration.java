@@ -11,3 +11,4 @@ public class SpringBeanConfiguration {
 		System.out.println("created "+this.getClass().getSimpleName());
 	}
 }
+
