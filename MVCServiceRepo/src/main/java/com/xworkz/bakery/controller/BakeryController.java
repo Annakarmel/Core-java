@@ -23,11 +23,15 @@ public class BakeryController {
 	@PostMapping
 	public String onBakery(BakeryDTO bakeryDTO, Model model) {
 		System.out.println("running onBakery "+ bakeryDTO);
-		model.addAttribute("name ", bakeryDTO.getName());
-		model.addAttribute("owner name", bakeryDTO.getOwnerName());
+		model.addAttribute("name", bakeryDTO.getName());
+		model.addAttribute("ownername", bakeryDTO.getOwnerName());
+		model.addAttribute("wifename", bakeryDTO.getOwnerWifeName());
+		model.addAttribute("famousFor", bakeryDTO.getFamousFor());
+		model.addAttribute("marriedOrNot", bakeryDTO.isMarried());
+		model.addAttribute("since", bakeryDTO.getSince());
 		boolean saved = this.bakeryService.validateAndSave(bakeryDTO);
 		System.out.println("saved "+saved);
-		return "index.jsp";
+		return "Bakery.jsp";
 		
 	}
 }
