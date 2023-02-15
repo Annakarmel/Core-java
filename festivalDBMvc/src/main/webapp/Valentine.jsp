@@ -33,10 +33,10 @@
 	
 	<form action="valentine" method="post">
 		<pre>
-	Name<input type="text" name="name">
-	Valentine Name<input type="text" name="valentineName">
+	Name<input type="text" name="name" value="${dto.name}">
+	Valentine Name<input type="text" name="valentineName" value="${dto.valentineName}">
 	Places<select name="place">
-	<option value="">SELECT</option>
+	<option value="${dto.place}">SELECT</option>
 	<c:forEach items="${places}" var="p">
 	<option value="${p}">${p}</option>
 	</c:forEach>
